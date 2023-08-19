@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 9%; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+  <section>
+    <header>
+      <h2 id="calc">calc</h2>
+      <div id="theme-number-toggle">
+        <p id="theme">THEME</p>
+        <div id="number-toggle">
+          <div id="number">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div id="toggle-container">
+            <div class="toggle-circle" id="red"></div>
+            <div class="toggle-circle" id="orange"></div>
+            <div class="toggle-circle" id="pure-cyan"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <input type="text" readonly id="screen">
+    <div id="keypad">
+      <div class="keys">
+        <button onclick="appendNumber('7')" class="number-keys">7</button>
+        <button onclick="appendNumber('8')" class="number-keys">8</button>
+        <button onclick="appendNumber('9')" class="number-keys">9</button>
+        <button id="delete">DEL</button>
+      </div>
+      <div class="keys">
+        <button onclick="appendNumber('4')" class="number-keys">4</button>
+        <button onclick="appendNumber('5')" class="number-keys">5</button>
+        <button onclick="appendNumber('6')" class="number-keys">6</button>
+        <button onclick="appendOperator('+')" class="signs number-keys">+</button>
+      </div>
+      <div class="keys">
+        <button onclick="appendNumber('1')" class="number-keys">1</button>
+        <button onclick="appendNumber('2')" class="number-keys">2</button>
+        <button onclick="appendNumber('3')" class="number-keys">3</button>
+        <button onclick="appendOperator('-')" class="signs number-keys">-</button>
+      </div>
+      <div class="keys">
+        <button onclick="appendNumber('.')" class="number-keys">.</button>
+        <button onclick="appendNumber('0')" class="number-keys">0</button>
+        <button onclick="appendOperator('/')" class="number-keys">/</button>
+        <button onclick="appendOperator('*')" class="signs number-keys">*</button>
+      </div>
+      <div class="keys">
+        <button id="reset">RESET</button>
+        <button id="equal">=</button>
+      </div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Joshua Ukaka</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
